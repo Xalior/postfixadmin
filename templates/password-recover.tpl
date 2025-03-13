@@ -14,7 +14,7 @@
 
 <form name="frmPassword" method="post" action="" class="form">
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="fUsername">{$PALANG.pLogin_username}:</label>
 
         <input class="form-control" type="email" name="fUsername"/>

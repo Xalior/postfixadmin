@@ -3,22 +3,22 @@
         <div class="card-header"><h4>{$PALANG.pTotp_exceptions_welcome}</h4></div>
         <div class="card-body enable-asterisk">
             <input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
-            <div class="form-group {if $pPassword_text}has-error{/if}">
+            <div class="mb-3 {if $pPassword_text}has-error{/if}">
                 <label class="col-md-4 col-sm-4 control-label"
                        for="fPassword_current">{$PALANG.pPassword_password_current}:</label>
                 <div class="col-md-6 col-sm-8"><input class="form-control" type="password" name="fPassword_current" id="fPassword_current"/></div>
                 <span class="help-block">{$pPassword_text}</span>
             </div>
-            <div class="form-group {if $pUser_text}has-error{/if}">
+            <div class="mb-3 {if $pUser_text}has-error{/if}">
                 <label class="col-md-4 col-sm-4 control-label" for="fUser">{$PALANG.pTotp_exceptions_user}:</label>
                 <div class="col-md-6 col-sm-8"><input class="form-control" type="input" name="fUser" id="fUser" value="{$pUser}"/></div>
                 <span class="help-block">{$pUser_text}</span>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label" for="fIp">{$PALANG.pTotp_exceptions_address}:</label>
                 <div class="col-md-6 col-sm-8"><input class="form-control" type="input" name="fIp" id="fIp"/></div>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label" for="fDesc">{$PALANG.pTotp_exceptions_description}:</label>
                 <div class="col-md-6 col-sm-8"><input class="form-control" type="input" name="fDesc" id="fDesc"/></div>
             </div>

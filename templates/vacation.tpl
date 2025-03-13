@@ -4,12 +4,12 @@
         <div class="card-body enable-asterisk">
             <input type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
             {if !$authentication_has_role.user}
-                <div class="form-group">
+                <div class="mb-3">
                     <label class="col-md-4 col-sm-4 control-label">{$PALANG.pLogin_username}:</label>
                     <div class="col-md-6 col-sm-8"><p class="form-control-static"><em>{$tUseremail}</em></p></div>
                 </div>
             {/if}
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label" for="fActiveFromForm">{$PALANG.pUsersVacation_activefrom}
                     :</label>
                 <div class="col-md-6 col-sm-8">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label"
                        for="fActiveUntilForm">{$PALANG.pUsersVacation_activeuntil}:</label>
                 <div class="col-md-6 col-sm-8">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label" for="fInterval_Time">{$PALANG.pVacation_reply_type}
                     :</label>
                 <div class="col-md-6 col-sm-8">
@@ -45,14 +45,14 @@
                     </select>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label" for="fSubject">{$PALANG.subject}:</label>
                 <div class="col-md-6 col-sm-8">
                     <textarea class="form-control" rows="3" cols="60" name="fSubject"
                               id="fSubject">{$tSubject}</textarea>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label class="col-md-4 col-sm-4 control-label" for="fBody">{$PALANG.message}:</label>
                 <div class="col-md-6 col-sm-8">
                     <textarea class="form-control" rows="10" cols="60" name="fBody" id="fBody">{$tBody}</textarea>

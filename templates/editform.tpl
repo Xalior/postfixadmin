@@ -9,10 +9,10 @@
                 {if $field.display_in_form == 1}
 
                     {if $table == 'foo' && $key == 'bar'}
-                        <div class="form-group">Special handling (complete table row) for {$table} / {$key}</div>
+                        <div class="mb-3">Special handling (complete table row) for {$table} / {$key}</div>
                     {else}
-                        <div class="form-group {if $fielderror.{$key}}has-error{/if}">
-                            <label class="col-md-4 col-sm-4 control-label" for="{$key}">{$field.label}</label>
+                        <div class="mb-3 row {if $fielderror.{$key}}has-error{/if}">
+                            <label class="col-md-4 col-sm-4 col-form-label" for="{$key}">{$field.label}</label>
                             <div class="col-md-6 col-sm-8">
                                 {if $field.editable == 0}
                                     {if $field.type == 'enma'}

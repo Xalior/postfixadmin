@@ -15,24 +15,24 @@
 
 <form name="mailbox" method="post" class="form">
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="fUsername">{$PALANG.pLogin_username}</label>
         <input class="form-control" type="email" name="fUsername" value="{$tUsername}"/>
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="fCode">{$PALANG.pPassword_password_code}</label>
         <input class="form-control" type="text" name="fCode" value="{$tCode}"/>
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="fPassword">
             {$PALANG.pPassword_password}
         </label>
         <input class="form-control" type="password" name="fPassword" autocomplete="new-password"/>
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="fPassword2">
             {$PALANG.pPassword_password2}
         </label>
