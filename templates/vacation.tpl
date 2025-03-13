@@ -1,7 +1,7 @@
 <form name="edit-vacation" method="post" action="" class="form-horizontal">
-    <div id="edit_form" class="panel panel-default">
-        <div class="panel-heading"><h4>{$PALANG.pUsersVacation_welcome}</h4></div>
-        <div class="panel-body enable-asterisk">
+    <div id="edit_form" class="card">
+        <div class="card-header"><h4>{$PALANG.pUsersVacation_welcome}</h4></div>
+        <div class="card-body enable-asterisk">
             <input type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
             {if !$authentication_has_role.user}
                 <div class="form-group">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
 
                 <div class="pull-right">

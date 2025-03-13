@@ -1,7 +1,7 @@
 <form name="password" method="post" action="" class="form-horizontal">
-    <div id="edit_form" class="panel panel-default">
-        <div class="panel-heading"><h4>{$PALANG.pTotp_exceptions_welcome}</h4></div>
-        <div class="panel-body enable-asterisk">
+    <div id="edit_form" class="card">
+        <div class="card-header"><h4>{$PALANG.pTotp_exceptions_welcome}</h4></div>
+        <div class="card-body enable-asterisk">
             <input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
             <div class="form-group {if $pPassword_text}has-error{/if}">
                 <label class="col-md-4 col-sm-4 control-label"
@@ -23,7 +23,7 @@
                 <div class="col-md-6 col-sm-8"><input class="form-control" type="input" name="fDesc" id="fDesc"/></div>
             </div>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
 
                 <div class="pull-right">
@@ -37,8 +37,8 @@
     </div>
 </form>
 
-<div id="edit_form" class="panel panel-default">
-    <div class="panel-heading"><h4>{$PALANG.pTotp_exceptions_list}</h4></div>
+<div id="edit_form" class="card">
+    <div class="card-header"><h4>{$PALANG.pTotp_exceptions_list}</h4></div>
     <table class="table table-hover" id="mailbox_table">
         <tr class="header">
             <th>{$PALANG.pOverview_mailbox_username}</th>

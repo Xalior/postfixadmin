@@ -1,7 +1,7 @@
 <form name="broadcast-message" method="post" action="" class="form-horizontal">
-<div id="edit_form" class="panel panel-default">
-	<div class="panel-heading"><h4>{$PALANG.pBroadcast_title}</h4></div>
-	<div class="panel-body">
+<div id="edit_form" class="card">
+	<div class="card-header"><h4>{$PALANG.pBroadcast_title}</h4></div>
+	<div class="card-body">
 		<input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}" />
 		<div class="form-group">
                         <label class="col-md-4 col-sm-4 control-label">{$PALANG.from}:</label>
@@ -32,7 +32,7 @@
 			</div>
                 </div>
 	</div>
-        <div class="panel-footer">
+        <div class="card-footer">
                 <div class="btn-toolbar" role="toolbar">
                         <div class="btn-group pull-right">
                         <input class="btn btn-primary" type="submit" name="submit" value="{$PALANG.pSendmail_button}" />

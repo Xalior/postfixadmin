@@ -1,6 +1,6 @@
 {assign var="file" value=$smarty.config.url_list_virtual}
-<div id="overview" class="panel panel-default">
-    <div class="panel-heading">
+<div id="overview" class="card">
+    <div class="card-header">
         <div class="row">
             <div class="col-md-5">
                 <form name="frmOverview" method="get" action="{$smarty.config.url_list_virtual}">
@@ -12,7 +12,7 @@
             <div class="col-md-5 col-md-offset-2 text-right">{#form_search#}</div>
         </div>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
         <div class="text-center">
             {if isset($search._)}
                 <h4>{$PALANG.pSearch_welcome} {$search._}</h4>
@@ -72,7 +72,7 @@
     <br/>
 {/if}
 {if $tab=='mailbox' || $tab=='all'}
-    <div id="mailboxes" class="panel panel-default">
+    <div id="mailboxes" class="card">
         {$nav_bar_mailbox.top}
         {assign var="colspan" value=9}
         {if $CONF.vacation_control_admin===YES}{assign var="colspan" value="`$colspan+1`"}{/if}
@@ -87,7 +87,7 @@
             {include file="list-virtual_mailbox.tpl"}
             {else}</table>
         {/if}
-        <div class="panel-footer">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
                 <div class="btn-group pull-right">
                     {$nav_bar_mailbox.bottom}

@@ -1,7 +1,7 @@
-<form name="edit_{$table}" method="post" action="" class="form-horizontal">
-    <div id="edit_form" class="panel panel-default">
-        <div class="panel-heading"><h4>{$formtitle}</h4></div>
-        <div class="panel-body enable-asterisk">
+<form name="edit_{$table}" method="post" action="">
+    <div id="edit_form" class="card">
+        <div class="card-header"><h4>{$formtitle}</h4></div>
+        <div class="card-body enable-asterisk">
             <input class="flat" type="hidden" name="table" value="{$table}"/>
             <input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
 
@@ -87,7 +87,7 @@
             {/foreach}
 
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
 		<div class="btn-group pull-right">
 		    <button class="btn btn-primary" type="submit" name="submit">

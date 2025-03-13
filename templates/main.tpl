@@ -1,5 +1,5 @@
 <!-- {$smarty.template} -->
-<div class="panel panel-default" id="main_menu">
+<div class="card" id="main_menu">
 
     <section>
         <h2>Global Search</h2>

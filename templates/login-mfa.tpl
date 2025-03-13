@@ -1,7 +1,7 @@
 <form name="password" method="post" action="" class="form-horizontal">
-    <div id="edit_form" class="panel panel-default">
-        <div class="panel-heading"><h4>{$PALANG.pTOTP_confirm}</h4></div>
-        <div class="panel-body enable-asterisk">
+    <div id="edit_form" class="card">
+        <div class="card-header"><h4>{$PALANG.pTOTP_confirm}</h4></div>
+        <div class="card-body enable-asterisk">
             <input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
             <div class="form-group {if $pTOPT_code_text}has-error{/if}">
                 <label class="col-md-4 col-sm-4 control-label" for="fTOTP_code">{$PALANG.pTOTP_code}:</label>
@@ -9,7 +9,7 @@
                 <span class="help-block">{$pTOPT_code_text}</span>
             </div>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
                 <div class="pull-right">
                     <a href="login-mfa.php?abort=1" class="btn mr btn-secondary">{$PALANG.exit}</a>

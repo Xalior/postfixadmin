@@ -1,7 +1,7 @@
 <form name="alias" method="post" action="" class="form-horizontal">
-    <div id="edit_form" class="panel panel-default">
-        <div class="panel-heading"><h4>{$PALANG.pEdit_alias_welcome}</h4></div>
-        <div class="panel-body enable-asterisk">
+    <div id="edit_form" class="card">
+        <div class="card-header"><h4>{$PALANG.pEdit_alias_welcome}</h4></div>
+        <div class="card-body enable-asterisk">
             <input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
             <p class="text-center"><em>{$PALANG.pEdit_alias_help}</em></p>
             <div class="form-group">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
 
             <div class="btn-toolbar">
                 <div class="pull-right">

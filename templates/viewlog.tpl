@@ -1,12 +1,12 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
+<div class="card">
+    <div class="card-header">
         <form name="frmOverview" method="post" action="">
 	    {html_options name='fDomain' output=$domain_list values=$domain_list selected=$domain_selected onchange="this.form.submit();"}
             <noscript><input class="button" type="submit" name="go" value="{$PALANG.go}"/></noscript>
         </form>
     </div>
     {if $tLog}
-        <div class="panel-body">
+        <div class="card-body">
 	    {if $domain_selected}
                 <h4>{$PALANG.pViewlog_welcome|replace:"%s":$CONF.page_size} {$fDomain} </h4>
             {else}

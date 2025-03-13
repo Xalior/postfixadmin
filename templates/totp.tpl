@@ -1,7 +1,7 @@
 <form name="password" method="post" action="" class="form-horizontal">
-    <div id="edit_form" class="panel panel-default" style="visibility:{$show_form}">
-        <div class="panel-heading"><h4>{$PALANG.pTOTP_welcome}</h4></div>
-        <div class="panel-body enable-asterisk">
+    <div id="edit_form" class="card" style="visibility:{$show_form}">
+        <div class="card-header"><h4>{$PALANG.pTOTP_welcome}</h4></div>
+        <div class="card-body enable-asterisk">
             <input class="flat" type="hidden" name="token" value="{$smarty.session.PFA_token|escape:"url"}"/>
             <div class="form-group">
                 <label class="col-md-4 col-sm-4 control-label">{$PALANG.pLogin_username}:</label>
@@ -27,7 +27,7 @@
                 <span class="help-block">{$pTOTP_code_text}</span>
             </div>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
 
                 <div class="pull-right">
@@ -42,8 +42,8 @@
         </div>
     </div>
     {if $show_form == 'hidden'}
-    <div id="showform" class="panel panel-default"">
-        <div class="panel-footer">
+    <div id="showform" class="card"">
+        <div class="card-footer">
             <div class="btn-toolbar" role="toolbar">
                 <div class="pull-left">
                     <h3>{$PALANG.TOTP_already_configured}</h3>
