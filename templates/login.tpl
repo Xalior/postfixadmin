@@ -8,11 +8,13 @@
 </nav>
 
 <div id="login" class="container">
-    <img id="login_header_logo" src="{$CONF.theme_logo}"
-         alt="Logo"/></a>
-    {if $CONF.show_header_text==='YES' && $CONF.header_text}
-        <h2>{$CONF.header_text}</h2>
-    {/if}
+    <div class="mx-auto">
+        <img id="login_header_logo" src="{$CONF.theme_logo}"
+             alt="Logo"/></a>
+        {if $CONF.show_header_text==='YES' && $CONF.header_text}
+            <h2>{$CONF.header_text}</h2>
+        {/if}
+    </div>
     <hr>
     <h2 class="h2">{if $logintype=='admin'}{$PALANG.pLogin_welcome}{else}{$PALANG.pUsersLogin_welcome}{/if}</h2>
 
