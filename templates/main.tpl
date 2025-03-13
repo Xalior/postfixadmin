@@ -53,75 +53,75 @@
     <section>
         <h2>Dashboard</h2>
         <table class="table">
-            <tr>
-                <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                       href="{#url_list_domain#}"><span class="glyphicon glyphicon-th-large"
-                                                                        aria-hidden="true"></span> {$PALANG.pMenu_overview}
-                    </a></td>
-                <td style="padding-top: 15px;">{$PALANG.pMain_overview}</td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                       href="{#url_create_alias#}"><span class="glyphicon glyphicon-plus-sign"
+            <div class="row align-items-start" style="border-bottom: 1px;">
+                <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                       href="{#url_list_domain#}"><i class="bi bi-grid-fill"
+                                                                        aria-hidden="true"></i> {$PALANG.pMenu_overview}
+                    </a></div>
+                <div class="col">{$PALANG.pMain_overview}</div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                       href="{#url_create_alias#}"><span class="bi bi-plus-circle-fill"
                                                                          aria-hidden="true"></span> {$PALANG.add_alias}
                     </a>
-                </td>
-                <td style="padding-top: 15px;">{$PALANG.pMain_create_alias}</td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                       href="{#url_create_mailbox#}"><span class="glyphicon glyphicon-inbox"
+                </div>
+                <div class="col">{$PALANG.pMain_create_alias}</div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                       href="{#url_create_mailbox#}"><span class="bi bi-inbox"
                                                                            aria-hidden="true"></span> {$PALANG.add_mailbox}
-                    </a></td>
-                <td style="padding-top: 15px;">{$PALANG.pMain_create_mailbox}</td>
-            </tr>
+                    </a></div>
+                <div class="col">{$PALANG.pMain_create_mailbox}</div>
+            </div>
             {if $CONF.sendmail==='YES'}
-                <tr>
-                    <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                           href="{#url_sendmail#}"><span class="glyphicon glyphicon-send"
+                <div class="row align-items-start">
+                    <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                           href="{#url_sendmail#}"><span class="bi bi-send"
                                                                          aria-hidden="true"></span> {$PALANG.pMenu_sendmail}
-                        </a></td>
-                    <td style="padding-top: 15px;">{$PALANG.pMain_sendmail}</td>
-                </tr>
+                        </a></div>
+                    <div class="col">{$PALANG.pMain_sendmail}</div>
+                </div>
             {/if}
             {if $CONF.dkim==='YES' && (
             $authentication_has_role.global_admin ||
             (isset($CONF.dkim_all_admins) && $CONF.dkim_all_admins === 'YES') )
             }
-                <tr>
-                    <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                           href="{#url_dkim#}"><span class="glyphicon glyphicon-certificate"
+                <div class="row align-items-start">
+                    <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                           href="{#url_dkim#}"><span class="bi bi-star-fill"
                                                                      aria-hidden="true"></span> {$PALANG.pMenu_dkim}</a>
-                    </td>
-                    <td style="padding-top: 15px;">{$PALANG.pMain_dkim}</td>
-                </tr>
+                    </div>
+                    <div class="col">{$PALANG.pMain_dkim}</div>
+                </div>
             {/if}
-            <tr>
-                <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                       href="{#url_password#}"><span class="glyphicon glyphicon-lock"
+            <div class="row align-items-start">
+                <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                       href="{#url_password#}"><span class="bi bi-lock"
                                                                      aria-hidden="true"></span> {$PALANG.pMenu_password}
                     </a>
-                </td>
-                <td style="padding-top: 15px;">{$PALANG.pMain_password}</td>
-            </tr>
+                </div>
+                <div class="col">{$PALANG.pMain_password}</div>
+            </div>
             {* viewlog *}
             {if $CONF.logging==='YES'}
-                <tr>
-                    <td nowrap="nowrap"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
-                                           href="{#url_viewlog#}"><span class="glyphicon glyphicon-file"
+                <div class="row align-items-start">
+                    <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px" class="btn btn-primary btn-block"
+                                           href="{#url_viewlog#}"><span class="bi bi-file-earmark"
                                                                         aria-hidden="true"></span> {$PALANG.pMenu_viewlog}
-                        </a></td>
-                    <td style="padding-top: 15px;">{$PALANG.pMain_viewlog}</td>
-                </tr>
+                        </a></div>
+                    <div class="col">{$PALANG.pMain_viewlog}</div>
+                </div>
             {/if}
-            <tr>
-                <td style="width: 150px;" nowrap="nowrap"><a style="text-align:left; padding-left:15px"
+            <div class="row align-items-start">
+                <div class="col-2 d-grid gap-2 m-1"><a style="text-align:left; padding-left:15px"
                                                              class="btn btn-primary btn-block"
                                                              href="{#url_logout#}"><span
-                                style="padding-left: 5px;" class="glyphicon glyphicon-log-out"
-                                aria-hidden="true"></span> {$PALANG.pMenu_logout}</a></td>
-                <td style="padding-top: 15px;">{$PALANG.pMain_logout}</td>
-            </tr>
+                                style="padding-left: 5px;" class="bi bi bi-box-arrow-right"
+                                aria-hidden="true"></span> {$PALANG.pMenu_logout}</a></div>
+                <div class="col">{$PALANG.pMain_logout}</div>
+            </div>
         </table>
     </section>
 </div>
