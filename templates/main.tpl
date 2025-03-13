@@ -1,15 +1,15 @@
 <!-- {$smarty.template} -->
 <div class="card" id="main_menu">
 
-    <section>
+    <div class="card-header">
         <h2>Global Search</h2>
         <form method=GET class=form action="">
             <div class="input-group">
-                <input type="text" id=q name=q class="form-control" value="{$q}" autofocus="autofocus"
+                <input type="text" id=q name=q class="form-control mx-2" value="{$q}" autofocus="autofocus"
                        placeholder="Global search (mailbox, alias ...)"
                        aria-label="Global Search">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">Search</button>
+                    <button class="btn btn-success" type="submit"><i class="bi bi-search"></i> Search</button>
                 </span>
             </div>
         </form>
@@ -48,9 +48,9 @@
                 {/foreach}
             </ul>
         {/if}
-    </section>
+    </div>
 
-    <section>
+    <div class="card-body">
         <h2>Dashboard</h2>
         <table class="table">
             <div class="row align-items-start" style="border-bottom: 1px;">
@@ -123,5 +123,5 @@
                 <div class="col">{$PALANG.pMain_logout}</div>
             </div>
         </table>
-    </section>
+    </div>
 </div>
