@@ -149,7 +149,7 @@
                     {* logout *}
                     <li><a class="btn navbar-btn" type="button"
                            href="{#url_logout#}">
-                            <i class="bi bi-x-octagon-fill"></i>
+                            <i class="bi bi-box-arrow-right"></i>
                             {$PALANG.pMenu_logout}</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
